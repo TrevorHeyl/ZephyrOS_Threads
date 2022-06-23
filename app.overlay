@@ -1,0 +1,37 @@
+
+#include <dt-bindings/pwm/pwm.h>
+#include <dt-bindings/gpio/gpio.h>
+/ {
+	leds {
+		compatible = "gpio-leds";
+
+		red_led: ledred {
+			gpios =  <&gpio0 3 GPIO_ACTIVE_HIGH>;
+			label = "Blue - LED0";
+		};
+
+		green_led: ledgreen {
+			gpios =  <&gpio0 4 GPIO_ACTIVE_HIGH>;
+			label = "Green - LED1";
+		};
+
+		blue_led: ledblue {
+			gpios =  <&gpio0 5 GPIO_ACTIVE_HIGH>;
+			label = "Red - LED2";
+		};
+	};
+	
+	aliases {
+		ledblue = &blue_led;
+		ledgreen = &green_led;
+		ledred = &red_led;
+	};
+
+	
+};
+
+
+
+       
+   
+
