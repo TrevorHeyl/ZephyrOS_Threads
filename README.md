@@ -3,6 +3,7 @@ Zephyr example with ESP32 C3 mini devkit showing how to use kernel threads
 
 ## What does this demo do?
 This demo shows the use of Zephyr OS kernel threads to create tasks
+
 **Specific topics:**
 1) Create 2 threads,one statically and one dynamincally
 2) The one thread has as start delay but both run at the same rate to demonstrate the delayed start feature
